@@ -157,7 +157,6 @@ img {
 .header .container {
     display: flex;
     align-items: center;
- 
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -178,7 +177,7 @@ img {
     display: flex;
 }
 
-.navigation-link:not(:last-child) {
+.navigation-list > li:not(:last-child) {
     margin-right: 46px;
 }
 
@@ -186,7 +185,7 @@ img {
     display: flex;
 }
 
-.contact-link:not(:last-child) {
+.contact-list > li:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -293,22 +292,20 @@ img {
 
 .about-us-list {
     display: flex;
-    justify-content: center;
-}
-
-.about-us-list {
-    display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
-    padding: 0px;
 }
 
 .about-us-item {
     margin-left: 15px;
     margin-right: 15px;
     flex-basis: calc((100% - 30px)/3);
-    max-width: 370px;
+    max-width: 370px;   
+}
+
+.about-us-item:not(:last-child) {
+    margin-right: 15px;
 }
 
 .section-about-us-title {
@@ -353,6 +350,10 @@ img {
     max-width: 270px;
 }
 
+.section-team-item:not(:last-child) {
+    margin-right: 15px;
+}
+
 .section-team-title {
     font-weight: 700;
     font-size: 36px;
@@ -389,12 +390,6 @@ img {
 
 
 /* ========== FOOTER ========== */
-
-.footer .conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .footer {
     background-color: var(--background-color-footer);
@@ -437,12 +432,13 @@ img {
 /* ========== WEBSITE: PORTFOLIO ========== */
 /* ========== SECTION CATEGORIES ========== */
 
+.menu {
+    margin-bottom: 35px;
+}
 
 .categories-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    background-color:#2196F3;
 }
 
 .categories-item:not(:last-child) {
@@ -452,17 +448,13 @@ img {
 .categories-pictures-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-top: -15px;
-
+    margin: -15px;
     justify-content: center;
-    background-color: red; 
 }
 
 .categories-pictures-item {
     border: 1px solid #eeeeee;
-    margin-left: 15px;
-    margin-top: 15px;
+    margin: 15px;
     flex-basis: calc((100% - 30px) / 3);
     max-width: 370px;
 }
