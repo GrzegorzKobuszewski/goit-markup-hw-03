@@ -459,7 +459,12 @@ img {
     max-width: 370px;
 }
 
+.categories-pictures-img {
+    border: 0px solid #eeeeee;
+}
+
 .categories-pictures-name {
+    border-top: 1px solid #eeeeee;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
