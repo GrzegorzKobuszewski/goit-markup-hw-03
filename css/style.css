@@ -434,7 +434,7 @@ img {
 /* ========== SECTION CATEGORIES ========== */
 
 .menu {
-    margin-bottom: 35px;
+    margin-bottom: 26px;
 }
 
 .categories-list {
@@ -449,14 +449,12 @@ img {
 .categories-pictures-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .categories-pictures-item {
     border: 1px solid #eeeeee;
-    margin: 15px;
-    flex-basis: calc((100% - 30px) / 3);
+    margin-top: 30px;
     max-width: 370px;
 }
 
